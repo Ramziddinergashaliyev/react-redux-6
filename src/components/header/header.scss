@@ -1,6 +1,6 @@
 .header {
-  padding: 10px 0px;
-  box-shadow: 1px 1px 10px gray;
+  padding: 15px 0px;
+  box-shadow: 1px 1px 10px #aaa6;
   &__nav {
     display: flex;
     align-items: center;
@@ -24,5 +24,15 @@
 
   &__nav__link.active {
     color: red;
+  }
+
+  @media (max-width: 320px) {
+    &__nav__logo {
+      display: none;
+    }
+
+    &__nav {
+      text-align: center;
+    }
   }
 }
